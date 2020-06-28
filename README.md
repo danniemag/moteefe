@@ -40,6 +40,19 @@ _________________
 
 ## GET /api/v1/carts
 
+##### Required body parameters:
+```json
+{
+  "shipping_region": "string - An alpha-2 country code (2 digits)",
+  "items": [ 
+    {
+      "name": "string - some_product",
+      "count": "integer - a positive number"
+    }
+  ]                                                             },
+}
+```
+
 ##### How to test:
 ```sh
 curl -H "Content-Type: application/json" -X GET http://localhost:3000/api/v1/carts
