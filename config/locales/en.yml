@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  bad_request:
+    region:
+      non_deliverable: 'Cannot send to this region'
+      not_found: 'Shipping Region not found'
+    items:
+      empty: 'No items in your basket. Shop now'
+      zeroed: 'An item amount in your basket is zeroed'

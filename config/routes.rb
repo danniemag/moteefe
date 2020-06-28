@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace 'api' do
     namespace 'v1' do
-      resources :carts, only: :index
+      resources :carts, only: %i[index create]
     end
   end
 end
