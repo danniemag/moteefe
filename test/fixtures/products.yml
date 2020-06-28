@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  supplier: MyString
+  delivery_times: 
+  in_stock: 1
+
+two:
+  product_name: MyString
+  supplier: MyString
+  delivery_times: 
+  in_stock: 1
