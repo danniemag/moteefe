@@ -7,12 +7,12 @@ module Api
       before_action :sanitize_input_parameters, only: :create
 
       def index
-        CartsManager.delivery_information(params)
         render json: { success: true, message: 'Yay! Route is working.' }, status: :ok
       end
 
       def create
-        render json: { success: true, message: 'Yay! Route is working.' }, status: :ok
+        delivery_date, shipments = CartsManager.delivery_information(params)
+        render json: { delivery_date: delivery_date, shipments: shipments }, status: :ok
       end
 
       private
