@@ -4,6 +4,10 @@ module Api
       def index
         render json: { success: true, message: 'Yay! Route is working.' }, status: :ok
       end
+
+      def create
+        render json: { success: true, message: 'Yay! Route is working.' }, status: :ok
+      end
     end
   end
 end
