@@ -49,7 +49,7 @@ _________________
       "name": "string - some_product",
       "count": "integer - a positive number"
     }
-  ]                                                             },
+  ]
 }
 ```
 
